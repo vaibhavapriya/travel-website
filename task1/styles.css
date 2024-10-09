@@ -1,0 +1,275 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    flex-wrap: wrap;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-family:Open sans;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    width:100vw; 
+    justify-content:space-around;
+    align-items:center;
+    /* background-color:rgb(255, 255, 255) ; */
+    color:rgb(4, 4, 4);
+    /* gap: 100px; */
+    padding: 20px;
+    font-weight: bold;   
+} 
+#nav #butnav{
+    display: flex;
+}  
+.aheader{
+    margin-left: 20px;
+    color :rgb(0, 0, 0); 
+    text-decoration: none;
+    font-size: 1rem;
+    gap: 100px;
+}
+.button{
+    background-color:white;
+    color:rgb(255, 166, 0) ;
+    /* font-weight: bold; */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 0cap;
+    padding: 4px 8px;
+}
+.button1:hover{
+    background-color: white; 
+    color:rgb(255, 166, 0); 
+    border: 2px solid rgb(255, 166, 0);    
+}
+.button2{
+    background-color:rgb(255, 166, 0)  ;
+    color: white;
+}
+.button2:hover {
+    background-color: white; 
+    color:rgb(255, 166, 0); 
+    border: 2px solid rgb(255, 166, 0);
+}
+#home,
+#destinations,#blog,#subscribe{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width:100vw;
+    flex-wrap: wrap;
+    justify-content:space-evenly; 
+    padding: 20px;
+    background-color:rgb(255, 255, 255) ;
+    gap:20px;
+}
+#about,#trips,#comments{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width:100vw;
+    flex-wrap: wrap;
+    background-image:url(./images/bg2.jpg );
+    background-repeat: no-repeat;
+    /* background-size:100vw,cover; */
+    background-size:cover;  
+    padding:40px 20px 40px 20px ;
+}
+.home1,.comment1,.footer1{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.contenthome,.about1,.destination1,.trip1,.blog1,.contentcomment,.afooter{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding: 20px;
+    gap: 20px;
+}
+.tripg,.destinationg,.blogg{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+.tripg,.destinationg,.blogg img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  /* gallery */
+.desbox {
+    border: 1px solid #ccc;
+    margin: 10px;
+    width: 30%;
+    border-radius:4px;
+}
+.desbox h4{
+    display: flex;
+    justify-content:space-between;
+    padding: 10px 10px 0 10px;    
+}
+.desbox span{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content:space-between; 
+    padding: 10px;   
+}
+@media (max-width: 768px) {
+    .tripg,.destinationg,.blogg {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .destination::before, .destination::after {
+        display: none;
+    }
+}
+/* home */
+#contenthome{
+    width: 40%;
+    align-items: start;
+    flex-wrap: wrap;
+}
+.explore{
+    width: 60%;
+}
+h1{
+    display: inline;
+}
+.button3{
+    margin-top: 20px;
+    border:2px solid rgb(255, 166, 0) ;
+    padding:5px 20px 5px 20px ;
+    font-size: larger;
+} 
+.button3:hover{
+    background-color:rgb(255, 166, 0)  ;
+    color: white;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.filter{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 15px;
+    justify-content: center;
+}
+.subfilter{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    margin: 20px;
+    padding: 0 5px 0 5px ;
+}
+.custom-select{
+    border: 0cap;
+    font-weight: bolder;
+    padding-bottom: 10px;
+}
+.button4{
+    padding:15px ;
+}
+/* about */
+.steps{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    padding-top: 30px;
+    padding-bottom: 20px;   
+}
+.subclass{
+    display: flex;
+    flex-wrap: wrap;
+    width:27%;
+    background-color: white;
+    padding: 20px;    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.subclass p{
+    color: rgb(255, 166, 0);
+    padding: 10px 0 10px 0; 
+}
+.subclass i,.subclass h3,.feedback i{
+    padding: 0 10px 10px 0;  
+    font-size:larger;
+}
+/* destination2,trip2,blog2,coments2 */
+/* comment */
+#contentcomment{
+    align-items: start;
+    width:50%;
+    flex-wrap: wrap;
+}
+.comment2{
+    width: 50%;
+}
+.feedback{
+    padding: 20px;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.932);
+    border-radius: 10px;
+}
+/* subscribe */
+.subscribe1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-image:url(9545253.jpg) ;
+    background-repeat: no-repeat;
+    background-size:cover;
+    font-size: larger;
+    color: white;
+    padding:80px 80px 80px 80px ;
+    border-radius: 10px;
+}
+input{
+    border: 0cap;
+    border-radius: 5px;
+    padding: 4px 8px;
+}
+.sbutton{
+    color:white;
+    
+    background-color:rgb(255, 166, 0);
+    border: 0cap;
+    margin-left: 20px;
+}
+.sbutton:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+  /* footer */
+.afooter{
+    /* position:fixed; */
+    /* color :white; */
+    text-decoration: none;
+    font-size: 1rem;
+    color: gray
+}
+.desbox:hover{
+    box-shadow: 0 4px 8px 0 rgb(255, 166, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}

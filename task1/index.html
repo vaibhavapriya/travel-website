@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>   
+    <meta charset="UTF-8">
+    <!--Setting the viewport to make your website look good on all devices:-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./images/favicon.png" />
+    <title>Trabook</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lato-font/3.0.0/css/lato-font.min.css"
+      integrity="sha512-rSWTr6dChYCbhpHaT1hg2tf4re2jUxBWTuZbujxKg96+T87KQJriMzBzW5aqcb8jmzBhhNSx4XYGA6/Y+ok1vQ=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+</head>
+<body>
+    <header>
+        <div>Trabook  <i class="fa fa-solid fa-route"></i></div>            
+        <div id="nav">
+            <a class="aheader" target="_self" href="#home">Home</a>   
+            <a class="aheader"target="_self" href="#about">About</a> 
+            <a class="aheader"target="_self" href="#destinations">Destinations</a> 
+            <a class="aheader"target="_self" href="#trips">Tour</a> 
+            <a class="aheader"target="_self" href="#blog">Blog</a>
+        </div>
+        <div id="butnav">
+            <button class="button button1">Login</button>
+            <button class="button button2">Signin</button>
+        </div>    
+    </header>
+    <section id="home">
+        <div class="home1">
+            <div id="contenthome" class="contenthome">
+                <h1>Get started your exciting <span style="color: rgb(255, 166, 0);">journey </span>with us</h1>
+                <p>A team of experienced tourism professionals will provide you with the best advice and tips for your desire place.    </p>
+                <button class="button button3">Discover Now</button>
+            </div>
+            <div class="explore">
+                <img src="images\traveller2.jpg" />
+            </div>
+        </div>
+        <div class="home1">
+            <div class="filter">
+                <div class="subfilter">
+                    <select class="custom-select" style="width:100px;" id="location"><option value="0">location</option></select>
+                    <p>where are you going</p>
+                </div>
+                <div class="subfilter">
+                    <select class="custom-select" style="width:100px;" id="date"><option value="0">date</option></select>
+                    <p>when will you go</p>
+                </div>
+                <div class="subfilter">
+                    <select class="custom-select" style="width:100px;" id="guest"><option value="0">guests</option></select>
+                    <p>number of guests</p>
+                </div>
+                <div class="subfilter">
+                    <button class="button button2 button4">explore now</button>
+                </div>
+            </div>
+        </div>       
+    </section>
+    <section id="about">
+        <div class="about1">
+            <h1>Things you need <span style="color: rgb(255, 166, 0);">to do</span></h1>
+            <p>We ensure that you'll enmark on a perfectly planned, safe vacation at a price you can afford.</p>
+        </div>
+        <div class="steps">
+            <div class="subclass">
+                <i class="fa fa-solid fa-address-book"></i>
+                <h3>Sign Up</h3>
+                <p>Completes of the work associated with planning and processing</p>
+            </div>
+            <div class="subclass">
+                <i class="fa fa-solid fa-money-bill-transfer"></i>
+                <i class="fa fa-solid fa-credit-card"></i>
+                <h3>Worth of Money</h3>
+                <p>After sucessful access then book from exclusive deals and pricing</p>
+            </div>
+            <div class="subclass">
+                <i class="fa fa-solid fa-location-dot"></i>
+                <i class="fa fa-solid fa-compass"></i>
+                <h3>Exciting Travel</h3>
+                <p>Start and explore a wide range of exciting travel experience</p>
+            </div>
+        </div>
+    </section>
+    <section id="destinations">
+        <div class="destination1">
+            <h1>Exclusive <span style="color: rgb(255, 166, 0);">deals & discounts</span></h1>
+            <p>Discover our fantastic early booking discounts & start planning your journey.</p>
+        </div>
+        <div class="destinationg">
+            <div class="desbox">
+                <img src="images\london.jfif" alt="London, UK" width="500" height="600">
+                <h4><div style="font-weight: bold">London</div> <div style="color: rgb(255, 166, 0);">$650</div></h4>
+                <span style="color: gray;font-weight: bold;" ><div><i class="fa fa-solid fa-map-pin"></i>UK</div><div><i class="fa fa-solid fa-star"></i>4.5</div></span>
+            </div>
+            <div class="desbox">
+                <img src="images\firenze.jfif" alt="Firenze, Italy" width="500" height="600">
+                <h4><div style="font-weight: bold">Firenze</div> <div style="color: rgb(255, 166, 0);">$750</div></h4>
+                <span style="color: gray;font-weight: bold;" ><div><i class="fa fa-solid fa-map-pin"></i>Italy</div><div><i class="fa fa-solid fa-star"></i>4.5</div></span>
+            </div>
+            <div class="desbox">
+                <img src="images\paris2.jfif" alt="Paris, France" width="500" height="600">
+                <h4><div style="font-weight: bold">Paris</div> <div style="color: rgb(255, 166, 0);">$600</div></h4>
+                <span style="color: gray;font-weight: bold;" ><div><i class="fa fa-solid fa-map-pin"></i>France</div><div><i class="fa fa-solid fa-star"></i>4.5</div></span>
+            </div>
+            <div class="desbox">
+                <img src="images\madri.jpg" alt="Madrid, Spain" width="500" height="600">
+                <h4><div style="font-weight: bold">Madrid</div> <div style="color: rgb(255, 166, 0);">$950</div></h4>
+                <span style="color: gray;font-weight: bold;" ><div><i class="fa fa-solid fa-map-pin"></i>Spain</div><div><i class="fa fa-solid fa-star"></i>4.5</div></span>
+            </div>
+        </div>
+    </section>
+    <section id="trips">
+        <div class="trip1">
+            <h1>Best <span style="color: rgb(255, 166, 0);">vacation plan</span></h1>
+            <p>Plan your perfect vacation with our travel agency. Choose among hundreds of all-inclusive offers!</p>
+        </div>
+        <div class="tripg">
+            <div class="desbox" style="background-color: white;">
+                <img src="images\rome.jfif" alt="Rome, Italy" width="500" height="600">
+                <h4><div style="font-weight: bold">Rome, Italy</div> <div style="color: rgb(255, 166, 0);">$600</div></h4>
+                <span style="color: gray;font-weight: bold; font-size: small;" ><div><i class="fa fa-solid fa-location-arrow"></i>10 Days</div><div><i class="fa fa-solid fa-star"></i>4.5</div></span>
+            </div>
+            <div class="desbox" style="background-color: white;">
+                <img src="images\osaka.jfif" alt="Osaka, Japan" width="500" height="600">
+                <h4><div style="font-weight: bold">Osaka, Japan</div> <div style="color: rgb(255, 166, 0);">$1000</div></h4>
+                <span style="color: gray;font-weight: bold; font-size: small;" ><div><i class="fa fa-solid fa-location-arrow"></i>10 Days</div><div><i class="fa fa-solid fa-star"></i>4.5</div></span>
+            </div>
+            <div class="desbox" style="background-color: white;">
+                <img src="images\dubai.jfif" alt="Dubai, UAE" width="500" height="600">
+                <h4><div style="font-weight: bold">Dubai, UAE</div> <div style="color: rgb(255, 166, 0);">$600</div></h4>
+                <span style="color: gray;font-weight: bold; font-size: small;" ><div><i class="fa fa-solid fa-location-arrow"></i>10 Days</div><div><i class="fa fa-solid fa-star"></i>4.5</div></span>
+            </div>
+        </div>
+    </section>
+    <section id="blog">
+        <div class="blog1">
+            <h1>Get updates with <span style="color: rgb(255, 166, 0);">latest blogs</span></h1>
+        </div>
+        <div class="blogg">
+            <div class="desbox" style="background-color: white;">
+                <img src="images\traveller.jpg" alt="Rome, Italy" width="500" height="600">
+                <h4 style="font-weight: bold">Rome in its glory</h4>
+                <span style="color: gray;font-weight: bold; font-size: small;" ><div>Oct 9,2024</div></span>
+            </div>
+            <div class="desbox" style="background-color: white;">
+                <img src="images\traveller1.jpg" alt="Rome, Italy" width="500" height="600">
+                <h4 style="font-weight: bold">Streets of fun, love and excitement  </h4>
+                <span style="color: gray;font-weight: bold; font-size: small;" ><div>Oct 9,2024</div></span>
+            </div>
+            <div class="desbox" style="background-color: white;">
+                <img src="images\osaka2.jfif" alt="Rome, Italy" width="500" height="600">
+                <h4 style="font-weight: bold">Walking on the courtward of 200 years history</h4>
+                <span style="color: gray;font-weight: bold; font-size: small;" ><div>Oct 9,2024</div></span>
+            </div>
+        </div>       
+    </section>
+    <section id="comments">
+        <div class="comment1">
+            <div id="contentcomment" class="contentcomment">
+                <h1>What people say <span style="color: rgb(255, 166, 0);"> about us </span>with us</h1>
+                <p>Our clients sends us bunch of smiles with our services and we love them </p>
+                <!--<button class="button button3">Discover Now</button>-->
+            </div>
+            <div class="comment2">
+                <div class="feedback">
+                    <i class="fa fa-solid fa-user"></i>
+                    <p>"On the windows taliking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no. </p>
+                    <h3>Mike taylor</h3>
+                    <p>Lahore,Pakistan</p>
+                </div>
+                <img src="" />
+            </div>
+        </div>
+    </section>
+    <section id="subscribe" style="padding: 100px 20px 100px 20px;">
+        <div class="subscribe1" >
+            <div>
+                <h2>Suscribe and get exclusive deals and offers</h2>
+            </div>
+            <div>
+                <input type=”email” id="email" name="enter the email" required/>
+                <button class="button sbutton">subscribe</button>     
+            </div>            
+        </div>        
+    </section>
+    <footer class="afooter" style="background-color: gainsboro;">
+        <div class="footer1" style="justify-content: space-between;align-items: start;">
+            <div>
+                <div style="color: black;padding-bottom: 10px;"><h4>Trabook  <i class="fa fa-solid fa-route"></i></h4></div>
+                <p></p>
+                <div>Book your trip in minute,get</div>
+                <div>Control for much longer</div>
+                <div>
+                    <i class="fab fa-brands fa-facebook" style="padding-right: 5px;"></i>
+                    <i class="fab fa-brands fa-instagram" style="padding-right: 5px;"></i>
+                    <i class="fab fa-brands fa-twitter" style="padding-right: 5px;"></i>
+                </div>
+            </div>
+            <div>
+                <h4 style="color: black;padding-bottom: 10px">Company</h4>
+                <p>About</p>
+                <p>Careers</p>
+                <p>Logistic</p>
+                <p>Privacy & Policys</p>
+            </div>
+            <div>
+                <h4 style="color: black;padding-bottom: 10px">Contact</h4>
+                <p>Help/FAQ</p>
+                <p>Press</p>
+                <p>Affilates</p>
+            </div>
+            <div>
+                <h4 style="color: black;padding-bottom: 10px">More</h4>
+                <p>Press Center</p>
+                <p>Our Blog</p>
+                <p>Low fare tips</p>
+            </div>
+        </div>
+        <div class="footer1" style="justify-content: space-between;">
+            <div>Copyright, Trabook 2022. All rights reserved.</div>
+            <div>Terms & Conditions</div>
+        </div>
+    </footer>
+</body>
+</html>
