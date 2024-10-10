@@ -285,3 +285,12 @@ input{
 .desbox:hover{
     box-shadow: 0 4px 8px 0 rgb(255, 166, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
 }
+.lock{
+    color:rgb(255, 166, 0);
+}
+.lock .fas,.lock :hover .far,.lock:focus .far{
+    display: none;
+}
+.lock :hover .fas,.lock:focus .fas{
+    display: inline-block;
+}
